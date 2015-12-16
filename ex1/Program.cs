@@ -17,7 +17,7 @@ namespace RockPaperScissors
             int randomNumber;
             randomNumber = ranNumberGenerator.Next(1, 4);
 
-            if (choice == "r")
+            if (choice == "r" || choice == "R" || choice == "rock" || choice == "Rock" || choice == "ROCK")
             {
                 if (randomNumber == 1)
                 {
@@ -35,7 +35,7 @@ namespace RockPaperScissors
                     Console.WriteLine("YOU LOSE!");
                 }
             }
-            else if (choice == "p")
+            else if (choice == "p" || choice == "P" || choice == "paper" || choice == "Paper" || choice == "PAPER")
             {
                 if (randomNumber == 1)
                 {
@@ -53,7 +53,7 @@ namespace RockPaperScissors
                     Console.WriteLine("TIE!");
                 }
             }
-            else if (choice == "s" || choice == "S" || choice == "scissors")
+            else if (choice == "s" || choice == "S" || choice == "scissors" || choice == "Scissors" || choice == "SCISSORS")
             {
                 if (randomNumber == 1)
                 {
