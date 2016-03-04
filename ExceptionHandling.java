@@ -15,8 +15,16 @@ public class ExceptionHandling {
 			File file = new File(fileName);
 			
 			Scanner inputFile = new Scanner(file);
+			if(inputFile == true)
+			{
+				System.out.println("File was found");
+			}
+			else
+			{
+				throw new FileNotFoundException();
+			}
 			
-			System.out.println("File was found");
+			
 		}
 		catch (FileNotFoundException e)
 		{
